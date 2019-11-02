@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script language=javascript>
+
+            salariofixo=parseFloat(prompt("digite seu salario"))
+            vendas=parseFloat(prompt("digite o valor de suas vendas"))
+
+            
+
+           if (vendas>=1500.00)
+           {
+           
+                comissao =((vendas - 1500) *0.05)+(1500*0.03);
+            
+           }
+           else
+           {
+                comissao = vendas * 0.03
+        
+           }
+            total = comissao + salariofixo;
+
+            alert("O valor total a receber é = R$" +total.toFixed(2));
+          
+        </script>
+    </head>
+         
+        <body> </body>
+    
+</html>
