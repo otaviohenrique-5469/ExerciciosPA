@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script language=javascript>
+            
+            valorHora=parseFloat(prompt("informe valor da hora"));
+            qtdHora=parseFloat(prompt("informe quantidade de horas trabalhadas no mes"));
+
+            salarioBruto= valorHora * qtdHora;
+
+            ir = salarioBruto * 0.11;
+            inss = salarioBruto * 0.08;
+            sindicato = salarioBruto * 0.05;
+
+            descontos = ir + inss + sindicato;
+
+            salarioLiquido= salarioBruto - descontos;
+
+            document.write("+ Salario Bruto:" +salarioBruto + ",00 reais" + "</br>" + "-IR:"+ir + ",00 reais" + "</br>" + "-INSS:"+inss + ",00 reais" + "</br>" +
+             "-Sindicato:" +sindicato + ",00 reais" + "</br>" + "=Salario Liquido:" + salarioLiquido + ",00 reais" +"</br></br>" + "Total de Descontos "+ descontos  + ",00 reais" )
+
+            
+
+            
+
+
+
+
+        </script>
+    </head>
+         
+        <body> </body>
+    
+</html>
